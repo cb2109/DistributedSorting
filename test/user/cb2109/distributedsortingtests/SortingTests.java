@@ -14,7 +14,7 @@ import java.util.stream.Stream;
  * Author: Christopher Bates
  * Date: 16/03/2018
  */
-public class SortingTest {
+public class SortingTests {
 
     @Test
     public void sortIntegers() {
