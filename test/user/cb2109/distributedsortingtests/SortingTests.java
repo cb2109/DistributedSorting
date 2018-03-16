@@ -25,7 +25,7 @@ public class SortingTests {
         Arrays.sort(answer);
 
         DataDistribution d = new UniformDataDistribution(1, 9);
-        SorterFactory<Integer> factory = new SorterFactory<Integer>();
+        SorterFactory<Integer> factory = new SorterFactory<>();
         SortManager<Integer> sortManager = factory.withDistribution(d).withChildren(1).build();
 
         sortManager.sort(Arrays.stream(numbersToSort));
@@ -35,7 +35,7 @@ public class SortingTests {
         Integer[] output = sorted.toArray(Integer[]::new);
 
         for (int i = 0; i < answer.length; i++) {
-            Assert.assertEquals("Incorrect value at position " + i,  (Object) answer[i], (Object) output[i]);
+            Assert.assertEquals("Incorrect value at position " + i, answer[i], output[i]);
         }
     }
 
