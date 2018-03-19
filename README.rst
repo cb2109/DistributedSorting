@@ -3,7 +3,7 @@ Distributed Statistical Sorting
 
 The idea of this project is to explore how knowledge of different metadata allows us to sort data more efficiently.
 A standard sorting algorithm's efficiency is reduced by having to consider each data point in the sort as anywhere on the
-number line on which is it being sorted. However, if we have more knowledge of the data set as a whole before hand we
+number line on which it is being sorted. However, if we have more knowledge of the data set as a whole before hand we
 can sort much faster as we can quickly eliminate many comparisons and distribute the work out into sets.
 
 Uniform Distribution Sorting
