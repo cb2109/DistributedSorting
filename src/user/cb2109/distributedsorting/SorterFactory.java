@@ -8,12 +8,12 @@ import user.cb2109.distributedsorting.managers.SortManager;
  * Author: Christopher Bates
  * Date: 16/03/2018
  */
-public class SorterFactory<T> {
+public class SorterFactory<T extends SortItem> {
 
-    private DataDistribution distribution = null;
+    private DataDistribution<T> distribution = null;
     private int numberOfSorters = 0;
 
-    public SorterFactory<T> withDistribution(DataDistribution d) {
+    public SorterFactory<T> withDistribution(DataDistribution<T> d) {
         this.distribution = d;
         return this;
     }

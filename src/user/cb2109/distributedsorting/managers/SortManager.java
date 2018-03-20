@@ -1,13 +1,16 @@
 package user.cb2109.distributedsorting.managers;
 
+import user.cb2109.distributedsorting.SortItem;
+
 import java.util.stream.Stream;
 
 /**
  * Author: Christopher Bates
  * Date: 16/03/2018
  */
-public interface SortManager<T> {
-    public void sort(Stream<T> stream);
+public interface SortManager<T extends SortItem> {
 
-    public Stream<T> getSortedList();
+    void sort(Stream<T> stream);
+
+    Stream<T> getSortedList();
 }
